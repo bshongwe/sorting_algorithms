@@ -21,7 +21,7 @@ void bubble_sort(int *array, size_t size)
 		bubbly = true;
 		for (index = 0; index < len - 1; index++)
 		{
-			if (array[index] > array[index +1])
+			if (array[index] > array[index + 1])
 			{
 				swp_num(array + index, array + index + 1);
 				print_array(array, size);
