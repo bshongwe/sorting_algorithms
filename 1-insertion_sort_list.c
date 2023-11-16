@@ -34,7 +34,7 @@ void insertion_sort_list(listint_t **list);
  * @nd2: second input node
  * Return: void
  */
-void swp_node(listint_t **head, listint_t **nd1, listint_t *nd2)
+void swp_node(listint_t **head, listint_t **nd_1, listint_t *nd_2)
 {
 	(*nd_1)->next = nd_2->next;
 	if (nd_2->next != NULL)
