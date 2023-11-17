@@ -27,6 +27,7 @@ void print_list(const listint_t *list);
 /* Tasks */
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
+void selection_sort(int *array, size_t size);
 
 /* Task custom prototypes */
 void swp_num(int *a, int *b);
