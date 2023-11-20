@@ -49,7 +49,7 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 
 /* Task custom prototypes */
-void swp_int(int *a, int *b);
+void swp_int(int *x, int *y);
 /* void swp_node(listint_t **head, listint_t **nd_1, listint_t *nd_2) */
 
 #endif /*end of _SORT_H_ file */

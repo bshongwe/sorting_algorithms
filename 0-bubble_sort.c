@@ -35,6 +35,7 @@ void bubble_sort(int *array, size_t size)
  * @y: Second int to swap.
  * Return: void
  */
+void swp_int(*x, int *y)
 {
 	int tmp_int;
 
