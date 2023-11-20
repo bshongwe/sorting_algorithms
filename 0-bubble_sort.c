@@ -19,7 +19,7 @@ void bubble_sort(int *array, size_t size)
 	while (bubbly == false)
 	{
 		bubbly = true;
-		for (a = 0 a < len - 1; a++)
+		for (a = 0; a < len - 1; a++)
 		{
 			swp_int(array + a, array + a + 1);
 			print_array(array, size);
@@ -35,7 +35,7 @@ void bubble_sort(int *array, size_t size)
  * @y: Second int to swap.
  * Return: void
  */
-void swp_int(*x, int *y)
+void swp_int(int *x, int *y)
 {
 	int tmp_int;
 
