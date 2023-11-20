@@ -6,7 +6,7 @@
  * @array: Input int array
  * @size: Array size
  */
-void bubble_sort(int *array, size_t size);
+void bubble_sort(int *array, size_t size)
 {
 	int tmp;
 	size_t i, z;
