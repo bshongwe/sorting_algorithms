@@ -30,8 +30,8 @@ void insertion_sort_list(listint_t **list);
 /**
  * swp_node - func swaps listint_t doubly-linked list nodes
  * @head: doubly-linked list head pointer
- * @nd1: first input node
- * @nd2: second input node
+ * @nd_1: first input node
+ * @nd_2: second input node
  * Return: void
  */
 void swp_node(listint_t **head, listint_t **nd_1, listint_t *nd_2)

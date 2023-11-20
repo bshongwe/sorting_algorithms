@@ -8,41 +8,27 @@
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t index, len = size;
-	bool bubbly = false;
+	int temp_num;
+	size_t a, b;
 
-	if (array == NULL || size < 2)
+	if (!array || !size)
 	{
 		return;
 	}
 
-	while (bubbly == false)
+	a = 0;
+	while (a < size)
 	{
-		bubbly = true;
-		for (index = 0; index < len - 1; index++)
+		for (b = 0; b < size - 1; b++)
 		{
-			if (array[index] > array[index + 1])
+			if (array[b] > array[b + 1])
 			{
-				swp_num(array + index, array + index + 1);
+				temp_num = array[b];
+				array[b] = array[b + 1];
+				array[b + 1] = temp_num;
 				print_array(array, size);
-				bubbly = false;
 			}
 		}
-		len--;
+		a++;
 	}
-}
-
-/**
- * swp_num - func swaps a and b in the array
- * @a: first input int
- * @b: second input int
- * Return: void
- */
-void swp_num(int *a, int *b)
-{
-	int temp_num;
-
-	temp_num = *a;
-	*a = *b;
-	*b = temp_num;
 }
