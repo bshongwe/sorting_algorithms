@@ -5,24 +5,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/* Bitonic sort macro direction */
-#define UP 0
-#define DOWN 1
-
-/* Boolean struct */
-
-/**
- * enum bool - Boolean value enumeration
- * @false: Equals 0.
- * @true: Equals 1.
- */
-typedef enum bool
-{
-	false = 0,
-	true
-} bool;
-
-
 /* struct for listint_s */
 
 /**
