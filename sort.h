@@ -3,6 +3,7 @@
 
 /* LIBRARIES */
 #include <stdlib.h>
+#include <stdbool.h>
 #include <stdio.h>
 
 /* MACROS DIRECTION */
