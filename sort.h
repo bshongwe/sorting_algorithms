@@ -53,6 +53,7 @@ int get_max(int *array, int size);
 void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
 		size_t back);
 void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back);
+void max_heapify(int *array, size_t size, size_t base, size_t root);
 
 /* Tasks */
 void bubble_sort(int *array, size_t size);
@@ -63,5 +64,6 @@ void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
 
 #endif /*end of _SORT_H_ file */
