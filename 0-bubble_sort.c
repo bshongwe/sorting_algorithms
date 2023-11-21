@@ -1,4 +1,5 @@
 #include "sort.h"
+#include <stdio.h>
 
 /**
  * bubble_sort - Function uses bubble sort algorithm
@@ -16,11 +17,15 @@ void bubble_sort(int *array, size_t size)
 		return;
 	}
 
+	/* Loop counter */
 	i = 0;
+	/* Outer loop */
 	while (i < size)
 	{
+		/* Inner loop */
 		for (z = 0; z < size - 1; z++)
 		{
+			/* Comparing elements */
 			if (array[z] > array[z + 1])
 			{
 				tmp = array[z];
