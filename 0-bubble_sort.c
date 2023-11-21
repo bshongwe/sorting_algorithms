@@ -8,8 +8,8 @@
  */
 void bubble_sort(int *array, size_t size)
 {
-	int tmp;
-	size_t i, z;
+	size_t i, j;
+	bool swapped;
 
 	if (!array || !size)
 	{
@@ -17,18 +17,28 @@ void bubble_sort(int *array, size_t size)
 	}
 
 	i = 0;
-	while (i < size)
-	{
-		for (z = 0; z < size - 1; z++)
+	do {
+		swapped = false;
+		for (j = 0; j < size - 1 - i; j++)
 		{
-			if (array[z] > array[z + 1])
+			if (array[j] > array[j + 1])
 			{
-				tmp = array[z];
-				array[z] = array[z + 1];
-				array[z + 1] = tmp;
-				print_array(array, size);
+				/* Swap directly without temporary variable */
+				int temp = array[j];
+
+				array[j] = array[j + 1];
+				array[j + 1] = temp;
+
+				swapped = true;
 			}
 		}
+
+		/* Adaptive swap mechanism: skip swaps if already sorted */
+		if (!swapped)
+		{
+			break;
+		}
+
 		i++;
-	}
+	} while (swapped);
 }
