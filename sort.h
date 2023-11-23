@@ -59,6 +59,8 @@ void radix_count_sort(int *array, size_t size, int sig, int *buff);
 void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
 		char flow);
 void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
+int hoare_partition(int *array, size_t size, int left, int right);
+void hoare_sort(int *array, size_t size, int left, int right);
 
 /* Tasks */
 void bubble_sort(int *array, size_t size);
@@ -72,5 +74,6 @@ void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
+void quick_sort_hoare(int *array, size_t size);
 
 #endif /*end of _SORT_H_ file */
