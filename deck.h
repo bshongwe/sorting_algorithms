@@ -50,7 +50,6 @@ int _strcmp(const char *s1, const char *s2);
 char get_val(deck_node_t *card);
 void insertion_sort_deck_kind(deck_node_t **deck);
 void insertion_sort_deck_val(deck_node_t **deck);
-void sort_deck(deck_node_t **deck);
 
 
-#endif /* DECK_H */
+#endif /* end of _DECK_H_ file */
