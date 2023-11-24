@@ -104,7 +104,7 @@ void insertion_sort_deck_value(deck_node_t **deck)
 		insert = iter->prev;
 		while (insert != NULL &&
 				insert->card->kind == iter->card->kind &&
-				get_value(insert) > get_value(iter))
+				get_val(insert) > get_val(iter))
 		{
 			insert->next = iter->next;
 			if (iter->next != NULL)
